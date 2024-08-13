@@ -1,0 +1,677 @@
+[gd_scene load_steps=19 format=3 uid="uid://cb6x8mupssv2"]
+
+[ext_resource type="Script" path="res://placeholder name/game-board.gd" id="1_285ps"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gabh6"]
+
+[sub_resource type="Animation" id="Animation_dv1jo"]
+resource_name = "1ATo2A Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2.08165e-12, 21), Vector2(2.08165e-12, 21), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../../../Player2/Player2A:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qtcai"]
+resource_name = "1ATo2B Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Arrow1ATo2B:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Arrow1ATo2B:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(8, 13), Vector2(8, 13), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../../../Player2/Player2B:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tehil"]
+resource_name = "1ATo1B Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../../../Player1/Player1B:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Arrow1ATo1B:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Arrow1ATo1B:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(21, 2.08165e-12), Vector2(21, 2.08165e-12), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3rutq"]
+resource_name = "1ATo2A Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-5, 2.08165e-12), Vector2(5, 2.08165e-12), Vector2(-4, 2.08165e-12), Vector2(4, 2.08165e-12), Vector2(-3, 2.08165e-12), Vector2(3, 2.08165e-12), Vector2(-2, 2.08165e-12), Vector2(2, 2.08165e-12), Vector2(1, 2.08165e-12), Vector2(-1, 2.08165e-12), Vector2(2.08165e-12, 2.08165e-12)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ei5x3"]
+resource_name = "1BTo2B Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo2B:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.08165e-12, 2.08165e-12), Vector2(-5, 2.08165e-12), Vector2(4, 2.08165e-12), Vector2(-4, 2.08165e-12), Vector2(3, 2.08165e-12), Vector2(-3, 2.08165e-12), Vector2(2, 2.08165e-12), Vector2(-2, 2.08165e-12), Vector2(1, 2.08165e-12), Vector2(-1, 2.08165e-12), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo2B:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dc0y4"]
+resource_name = "1ATo2B Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Arrow1ATo2B:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Arrow1ATo2B:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-5, 2.08165e-12), Vector2(5, 2.08165e-12), Vector2(-4, 2.08165e-12), Vector2(4, 2.08165e-12), Vector2(-3, 2.08165e-12), Vector2(3, 2.08165e-12), Vector2(2, 2.08165e-12), Vector2(-1, 2.08165e-12), Vector2(1, 2.08165e-12), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ty6me"]
+resource_name = "1ATo1B Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Arrow1ATo1B:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Arrow1ATo1B:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2.08165e-12, 5), Vector2(2.08165e-12, -4), Vector2(2.08165e-12, 4), Vector2(2.08165e-12, -3), Vector2(2.08165e-12, 3), Vector2(2.08165e-12, -2), Vector2(2.08165e-12, 2), Vector2(2.08165e-12, -1), Vector2(2.08165e-12, 1), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_spe06"]
+resource_name = "1BTo1A Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo1A:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo1A:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2.08165e-12, 5), Vector2(2.08165e-12, -4), Vector2(2.08165e-12, 4), Vector2(2.08165e-12, -3), Vector2(2.08165e-12, 3), Vector2(2.08165e-12, -2), Vector2(2.08165e-12, 2), Vector2(2.08165e-12, -1), Vector2(2.08165e-12, 1), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bbjlp"]
+resource_name = "1BTo1A Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo1A:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo1A:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-21, 2.08165e-12), Vector2(-21, 2.08165e-12), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../../../Player1/Player1A:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dcsrf"]
+resource_name = "1BTo2A Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo2A:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo2A:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-8, 13), Vector2(-8, 13), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../../../Player2/Player2A:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_l5cgl"]
+resource_name = "1BTo2A Error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo2A:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo2A:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3001, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(5, 2.08165e-12), Vector2(-4, 2.08165e-12), Vector2(4, 2.08165e-12), Vector2(-3, 2.08165e-12), Vector2(3, 2.08165e-12), Vector2(-2, 2.08165e-12), Vector2(2, 2.08165e-12), Vector2(-1, 2.08165e-12), Vector2(1, 2.08165e-12), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5ixnv"]
+resource_name = "1BTo2B Glow"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Source1B/Arrow1BTo2B:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.960784, 0.411765, 1), Color(0, 1, 0.588235, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Source1B/Arrow1BTo2B:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2.08165e-12, 21), Vector2(2.08165e-12, 21), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../../../Player2/Player2B:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.960784, 0.54902, 0.729412, 1), Color(0.768627, 0.121569, 0.231373, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_i0g23"]
+resource_name = "2ATo1A Glow"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3tmwx"]
+_data = {
+"1ATo1B Error": SubResource("Animation_ty6me"),
+"1ATo1B Glow": SubResource("Animation_tehil"),
+"1ATo2A Error": SubResource("Animation_3rutq"),
+"1ATo2A Glow": SubResource("Animation_dv1jo"),
+"1ATo2B Error": SubResource("Animation_dc0y4"),
+"1ATo2B Glow": SubResource("Animation_qtcai"),
+"1BTo1A Error": SubResource("Animation_spe06"),
+"1BTo1A Glow": SubResource("Animation_bbjlp"),
+"1BTo2A Error": SubResource("Animation_l5cgl"),
+"1BTo2A Glow": SubResource("Animation_dcsrf"),
+"1BTo2B Error": SubResource("Animation_ei5x3"),
+"1BTo2B Glow": SubResource("Animation_5ixnv"),
+"2ATo1A Glow": SubResource("Animation_i0g23")
+}
+
+[sub_resource type="BoxMesh" id="BoxMesh_bg4s2"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_q522l"]
+
+[node name="Root" type="Node2D"]
+script = ExtResource("1_285ps")
+
+[node name="Player1" type="Node2D" parent="."]
+position = Vector2(372, 130)
+
+[node name="Player1A" type="RichTextLabel" parent="Player1"]
+offset_left = -8.0
+offset_top = 14.0
+offset_right = 32.0
+offset_bottom = 54.0
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Player1B" type="RichTextLabel" parent="Player1"]
+offset_left = 178.0
+offset_top = 3.0
+offset_right = 218.0
+offset_bottom = 43.0
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="TurnIndicator" type="MeshInstance2D" parent="Player1"]
+position = Vector2(336, -1.12499)
+scale = Vector2(39.7948, 35.75)
+mesh = SubResource("SphereMesh_gabh6")
+
+[node name="Player1Name" type="RichTextLabel" parent="Player1"]
+offset_left = 366.0
+offset_top = -13.0
+offset_right = 510.0
+offset_bottom = 42.0
+text = "Player 1"
+
+[node name="Player2" type="Node2D" parent="."]
+position = Vector2(372, 130)
+
+[node name="Player2A" type="RichTextLabel" parent="Player2"]
+offset_left = -11.0
+offset_top = 293.0
+offset_right = 29.0
+offset_bottom = 333.0
+text = "1"
+
+[node name="Player2B" type="RichTextLabel" parent="Player2"]
+offset_left = 178.0
+offset_top = 292.0
+offset_right = 218.0
+offset_bottom = 332.0
+text = "1"
+
+[node name="TurnIndicator" type="MeshInstance2D" parent="Player2"]
+visible = false
+position = Vector2(341, 266)
+scale = Vector2(39.7948, 35.75)
+mesh = SubResource("SphereMesh_gabh6")
+
+[node name="Player2Name" type="RichTextLabel" parent="Player2"]
+offset_left = 378.0
+offset_top = 249.0
+offset_right = 522.0
+offset_bottom = 304.0
+text = "Player 2"
+
+[node name="DirectionalArrow" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DirectionalArrow"]
+root_node = NodePath("../Player1/Source1A/Arrow1ATo2A")
+libraries = {
+"": SubResource("AnimationLibrary_3tmwx")
+}
+
+[node name="Player1" type="Node2D" parent="DirectionalArrow"]
+
+[node name="Source1A" type="Node2D" parent="DirectionalArrow/Player1"]
+
+[node name="Arrow1ATo2A" type="Node2D" parent="DirectionalArrow/Player1/Source1A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo2A"]
+position = Vector2(368.512, 230.125)
+scale = Vector2(4.97595, 70.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo2A"]
+position = Vector2(368.899, 256)
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow1ATo2B" type="Node2D" parent="DirectionalArrow/Player1/Source1A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo2B"]
+position = Vector2(411.487, 218.948)
+rotation = -0.610865
+scale = Vector2(4.37539, 114.003)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo2B"]
+position = Vector2(439.591, 258)
+rotation = -0.610865
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow1ATo1B" type="Node2D" parent="DirectionalArrow/Player1/Source1A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo1B"]
+position = Vector2(407.209, 154.5)
+rotation = 1.5708
+scale = Vector2(5.97596, 30.6684)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1A/Arrow1ATo1B"]
+position = Vector2(432, 153)
+rotation = -1.5708
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Source1B" type="Node2D" parent="DirectionalArrow/Player1"]
+
+[node name="Arrow1BTo2B" type="Node2D" parent="DirectionalArrow/Player1/Source1B"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo2B"]
+position = Vector2(556, 218.125)
+scale = Vector2(4.97595, 84.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo2B"]
+position = Vector2(555.899, 258.125)
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow1BTo2A" type="Node2D" parent="DirectionalArrow/Player1/Source1B"]
+
+[node name="arrowShaftMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo2A"]
+position = Vector2(519.389, 201.69)
+rotation = 0.610865
+scale = Vector2(4.87505, 88.6072)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHeadMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo2A"]
+position = Vector2(491.981, 241.484)
+rotation = 0.610865
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow1BTo1A" type="Node2D" parent="DirectionalArrow/Player1/Source1B"]
+
+[node name="ArrowHeadMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo1A"]
+position = Vector2(483, 150)
+rotation = 1.5708
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="ArrowShaftMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player1/Source1B/Arrow1BTo1A"]
+position = Vector2(512, 150)
+rotation = 1.5708
+scale = Vector2(5.97595, 42.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="Player2" type="Node2D" parent="DirectionalArrow"]
+
+[node name="Source2A" type="Node2D" parent="DirectionalArrow/Player2"]
+
+[node name="Arrow2ATo1A" type="Node2D" parent="DirectionalArrow/Player2/Source2A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo1A"]
+position = Vector2(365.899, 372.125)
+rotation = 3.14159
+scale = Vector2(4.97595, 70.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo1A"]
+position = Vector2(366, 337)
+rotation = 3.14159
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow2ATo1B" type="Node2D" parent="DirectionalArrow/Player2/Source2A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo1B"]
+position = Vector2(398.185, 377.619)
+rotation = -2.53073
+scale = Vector2(4.97595, 70.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo1B"]
+position = Vector2(420.41, 343.887)
+rotation = -2.53073
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow2ATo2B" type="Node2D" parent="DirectionalArrow/Player2/Source2A"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo2B"]
+position = Vector2(408.334, 430.399)
+rotation = 1.5708
+scale = Vector2(5.97596, 30.6684)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2A/Arrow2ATo2B"]
+position = Vector2(433.125, 428.899)
+rotation = -1.5708
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Source2B" type="Node2D" parent="DirectionalArrow/Player2"]
+
+[node name="Arrow2BTo1B" type="Node2D" parent="DirectionalArrow/Player2/Source2B"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo1B"]
+position = Vector2(554.798, 366.569)
+rotation = 3.14159
+scale = Vector2(4.97595, 70.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo1B"]
+position = Vector2(554.899, 331.444)
+rotation = 3.14159
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow2BTo1A" type="Node2D" parent="DirectionalArrow/Player2/Source2B"]
+
+[node name="ArrowShaft" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo1A"]
+position = Vector2(518.166, 374.505)
+rotation = 2.53073
+scale = Vector2(4.97595, 70.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="ArrowHead" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo1A"]
+position = Vector2(494.981, 338.887)
+rotation = 2.53073
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="Arrow2BTo2A" type="Node2D" parent="DirectionalArrow/Player2/Source2B"]
+
+[node name="ArrowHeadMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo2A"]
+position = Vector2(483.444, 432.899)
+rotation = 1.5708
+scale = Vector2(33.7982, 24.8886)
+mesh = SubResource("PrismMesh_q522l")
+
+[node name="ArrowShaftMesh2D" type="MeshInstance2D" parent="DirectionalArrow/Player2/Source2B/Arrow2BTo2A"]
+position = Vector2(512.444, 432.899)
+rotation = 1.5708
+scale = Vector2(5.97595, 42.25)
+mesh = SubResource("BoxMesh_bg4s2")
+
+[node name="GCDTimer" type="Timer" parent="."]
+wait_time = 1.01
+one_shot = true
